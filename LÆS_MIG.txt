@@ -1,0 +1,127 @@
+GENKEND DET! – gameshow
+
+MAPPERNE
+  index.html   selve showet
+  billeder/    læg billeder af gæsterne her
+  musik/       læg sangene her (mp3 eller m4a)
+  Appen henter ikke selv filerne fra mapperne. Du trækker dem ind på opsætningssiden.
+
+1) LÆG SIDEN ONLINE (så telefonerne kan forbinde)
+   - Upload index.html til din simply.com-server
+   - Upload KUN index.html (ikke billeder, musik eller video, så bliver de offentlige)
+   - Åbn siden på serveren i browseren på projektor-computeren
+
+2) FORBERED SHOWET (på projektor-computeren, samme browser som til festen)
+   Billeder: Træk billeder ind, klik for at vælge hvor zoomet starter, skriv svaret.
+   Emojis:   Ret eller slet de fem eksempler, og tilføj dine egne.
+   Musik:    Træk sange ind og vælg "start ved" (fx omkvædet). Tjek med ▶.
+   Ord:      "Det forkerte ord". Skriv et tema og ord der passer til det, plus ét
+             der ikke gør. Markér det forkerte med prikken. Ordene vises ét ad
+             gangen i den rækkefølge du skriver dem. Ret eller slet de tre eksempler.
+   Gæt ordet: Skriv et ord eller en kort sætning og en kategori. Først ses kun
+             tomme felter, så dukker bogstaverne op ét ad gangen i tilfældig
+             rækkefølge. Ret eller slet de tre eksempler.
+   Intro-video: Under "Runder & point" trækker du intro-videoen ind (mp4).
+             En ny video erstatter den gamle.
+   Runder:   Vælg rækkefølge, og om de skal blandes. Tider og point kan justeres.
+
+3) TIL FESTEN
+   - Tryk "Gå til lobbyen". Er der en intro-video, står dens første billede stille.
+     Mellemrum starter den, og mellemrum igen springer den over. Når videoen er
+     færdig, kommer lobbyen frem.
+   - I lobbyen scanner gæsterne QR-koden, skriver navn og tager en selfie.
+   - Pointene falder fra 1000 til 100, mens noget afsløres. Man får det,
+     der står, når man buzzer. Forkert gæt = 5 sek. pause for den spiller.
+   - Efter et buzz har spilleren 7 sekunder til at svare. Ellers går spillet
+     videre, som ved et forkert gæt. Svartiden kan ændres under "Runder & point".
+   - Stillingen vises live i højre side af skærmen.
+
+   Taster på projektor-computeren:
+     Mellemrum  start / pause / videre
+     R          rigtigt (eller afslør, hvis ingen har buzzet)
+     F          forkert
+     N / →      næste      ←  forrige
+     S          vis stillingen      Q  vis QR-koden i hjørnet
+     M          underlægningsmusik til/fra
+   Hold musen over en spiller på stillingen for at give ±100 point.
+
+   Styring fra telefonen: scan styrings-QR'en nederst på opsætningssiden.
+   Den viser svaret, så du kan dømme. Del den ikke med gæsterne.
+
+UNDERLÆGNINGSMUSIK
+   Mens man gætter, kører en glad loop (som i Kahoot). Den stopper, når nogen
+   buzzer, og fortsætter ved forkert svar. Til sidst i hvert billede/gåde bliver
+   den mere hektisk. I musik-runden er den slået fra (så sangene kan høres).
+   I lobbyen, før hver runde og på stillingen spiller en roligere loop.
+   Slå til/fra og skru på lydstyrken under "Runder & point". Tast M på scenen.
+
+DRIKKEPAUSER
+   6 pauser dukker op tilfældigt i løbet af showet, både mellem legene og
+   mellem billeder/sange/gåder inde i en leg (aldrig midt i en afsløring).
+   Hver slags kommer én gang, og rækkefølgen er ny hver gang:
+     Skål!             alle skåler efter en nedtælling
+     Lykkehjulet       hjulet med selfies vælger én der drikker
+     Reaktionstesten   tryk på buzzeren når skærmen bliver grøn; den sidste
+                       og dem der trykker for tidligt drikker
+     Førstepladsen drikker   nr. 1 drikker
+     Bunden bestemmer  den sidste vælger på sin telefon hvem der drikker
+     Skåle-makkere     to tilfældige skåler med hinanden
+   Pauserne fortsætter selv efter 15 sek., eller tryk mellemrum.
+   De kan slås fra under "Runder & point".
+
+HVEM ER TEGNET? (tegninger/)
+   Læg illustrationer af gæsterne i fanen "Tegninger" og skriv navnet på
+   personen præcis som de registrerer sig på telefonen. Tegningen males frem
+   med penselstrøg, og når svaret afsløres, står spillerens selfie ved siden af.
+   Male-tiden kan ændres under "Runder & point".
+
+FIND ET FELT! (minispil midt i showet)
+   Telefonen bliver til et joystick og en SKUB-knap. Alle løber rundt, mens
+   musikken spiller. Når den stopper, dukker felter op med et antal pladser
+   (fx 2/3) – de første, der når derhen, får pladserne. Resten er ude.
+   Felterne bliver færre for hver runde. Sidste spiller tilbage – eller dem,
+   der står tilbage efter 2 minutter – får 200 point.
+   PRØVERUNDE: Først spilles 2 prøve-runder, hvor ingen ryger ud og intet
+   tæller. Dem der ikke når et felt, bliver grå et øjeblik og er med igen.
+   Når prøverunden er slut: tryk mellemrum for at starte det rigtige spil.
+   Vil du springe den over, så tryk to gange. Den kan slås fra under
+   "Runder & point" (Find et felt!).
+   Mellemrum/N: når spillet er slut, går du videre til stillingen.
+   Vil du stoppe midt i, så tryk to gange.
+   Spilletid og point kan ændres under "Runder & point", og placeringen i
+   showet flyttes med pilene i rundelisten.
+
+Gode råd
+   - Test med 2 telefoner dagen før, på festens wifi.
+   - Skru op for lyden på projektor-computeren (buzzer-lyd og musik kommer derfra).
+
+LYSSHOW (Arduino Uno + LED-kæde)
+   Mappen lys/ indeholder programmet til Arduinoen (lys.ino).
+
+   Tilslutning (brug kædens DI-ende, hvor pilene peger VÆK fra):
+     Kædens 5V  -> Arduino 5V
+     Kædens GND -> Arduino GND
+     Kædens DI  -> Arduino pin 6 (gerne via en modstand på ca. 330 ohm)
+   Der skal ikke bruges strømforsyning. Lysstyrken er begrænset, så USB kan klare det.
+   Kæden lyser aldrig hvidt (trækker for meget strøm); programmet fjerner hvid fra alle farver.
+
+   Første gang:
+   1. Installér Arduino IDE (arduino.cc/en/software).
+   2. Værktøjer > Administrer biblioteker > søg "FastLED" > Installér.
+   3. Åbn lys/lys.ino. Ret NUM_LEDS øverst til antallet af LED'er på kæden.
+   4. Vælg Board: "Arduino Uno" og den rigtige port, og tryk Upload (→).
+      Kæden viser nu en regnbue. Så virker den.
+   5. Luk Arduino IDE (ellers er porten optaget).
+   6. Upload den nye index.html til serveren igen.
+   7. På opsætningssiden, i den blå boks "Lysshow": tryk "Forbind lys" og vælg
+      Arduinoen. Prøv knapperne. Næste gang forbinder den af sig selv.
+      På scenen kan du også trykke L for at forbinde.
+   Virker kun i Chrome eller Edge.
+
+   Hvad lyset gør:
+     Lobby/intro: regnbue · Mens man tænker: slukket
+     Buzz: blinker 3 gange i lilla, lyserød og mørkelilla. Mens spilleren svarer:
+     hurtigt scanner-lys frem og tilbage, fra grøn til rød når svartiden løber ud
+     Rigtigt: grøn bølge, så guld · Forkert: rødt blink · Stilling: løbelys
+     Drikkepause: lilla fyrværkeri, der springer forskellige steder i roligt bastempo · Reaktionstesten: rød, så grøn med skærmen
+     Find et felt!: disco når musikken spiller · Finale: konfetti-fest
